@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:3000"
     CACHE_DIR: str = "./data/raw"
     FASTF1_CACHE_DIR: str = "./data/raw/fastf1_cache"
-    ERGAST_BASE_URL: str = "http://ergast.com/api/f1"
+    ERGAST_BASE_URL: str = "https://api.jolpi.ca/ergast/f1"
 
     @property
     def origins_list(self) -> List[str]:
